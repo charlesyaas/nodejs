@@ -1,0 +1,36 @@
+
+<div id="report-title"><h1>Peserta</h1></div>
+<table className="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Jenjang</th>
+            <th>Tahun Lulus</th>
+            <th>Nama Peserta</th>
+            <th>Tempat Lahir</th>
+            <th>Tanggal Lahir</th>
+            <th>Orangtua</th>
+            <th>Nopes Un</th>
+            <th>No Ijazah</th>
+            <th>Npsn</th>
+            <th>Nama Sekolah</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.id %></td>
+            <td><%= record.jenjang %></td>
+            <td><%= record.tahun_lulus %></td>
+            <td><%= record.nama_peserta %></td>
+            <td><%= record.tempat_lahir %></td>
+            <td><%= record.tanggal_lahir %></td>
+            <td><%= record.orangtua %></td>
+            <td><%= record.nopes_un %></td>
+            <td><%= record.no_ijazah %></td>
+            <td><%= record.npsn %></td>
+            <td><%= record.nama_sekolah %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>

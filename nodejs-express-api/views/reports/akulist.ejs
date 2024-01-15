@@ -1,0 +1,26 @@
+
+<div id="report-title"><h1>Aku</h1></div>
+<table className="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Fullname</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Photo</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% records.forEach(function(record){ %>
+        <tr>
+            <td><%= record.id %></td>
+            <td><%= record.fullname %></td>
+            <td><%= record.username %></td>
+            <td><%= record.email %></td>
+            <td><%= record.photo %></td>
+            <td><%= record.role %></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
